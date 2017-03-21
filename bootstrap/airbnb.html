@@ -3,8 +3,10 @@
 <head>
 	<title>Airbnb</title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="node_modules/dist/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/jumbotron-narrow.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="node_modules/dist/css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="node_modules/dist/css/bootstrap-theme.css"/>
 </head>
 <body> 
 	<header>
@@ -31,11 +33,33 @@
 		    </nav>
 		    <div class="jumbotron">
 		    	<div class="container">
-		    		<h1>Où souhaitez-vous aller?</h1>
-		    		<p>Votre prochaine aventure commence sur Airbnb.</p>    		
+		    		<h1>Où souhaitez-vous aller? <small>Votre prochaine aventure commence sur Airbnb.</small></h1>
 		    	</div>
 		    </div>
 	</header>
+
+	<section>
+		<div class="container">
+				<div class="row">
+					<div class="col-xs-6 col-sm-3 form-group">
+						<label class="sr-only" for="Partout">Partout</label>
+						<input class="form-control" id="Partout" type="text" name="where" placeholder="Partout" />
+					</div>
+					<div class="col-xs-6 col-sm-3 form-group">
+						<label class="sr-only" for="Date">Date</label>
+						<input class="form-control" id ="Date" type="text" name="when" placeholder="Date indifférente" />
+					</div>
+					<form class="form-inline">
+						<div class="col-xs-6 col-sm-3 form-group ">
+							<label class="sr-only" for="Personne">Personne</label>
+							<input class="form-control" id="Personne" type="text" name="howMany" placeholder="1 Personne" />
+						</div>
+						<button type="submit" class="btn btn-default active">Rechercher</button>
+					</form>
+				</div>
+		</div>
+		
+	</section>
 </body>
 </html>
 
